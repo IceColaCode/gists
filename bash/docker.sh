@@ -1,4 +1,5 @@
 # start a docker image registry
+# -e username="ritchie": 设置环境变量；
 docker run -d \
   -e REGISTRY_HTTP_ADDR=0.0.0.0:5001 \
   -p 5001:5001 \
@@ -18,6 +19,8 @@ docker run -d -p 3000:3000 \
 
 
 # list dangling images
+# --filter , -f		Filter output based on conditions provided
+# --quiet , -q		Only show image IDs
 docker images -f 'dangling=true' -q
 
 # delete dangling images/containers

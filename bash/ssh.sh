@@ -1,6 +1,9 @@
 # validate pub agains private key
 diff -s <(ssh-keygen -y -f ~/.ssh/id_rsa) <(cut -d ' ' -f 1,2 ~/.ssh/id_dsa.pub)
 
+#-h：主机文件列表，内容格式"[user@]host[:port]"
+#-H：主机字符串，内容格式"[user@]host[:port]"
+#-i：每个服务器内部处理信息输出
 # remote control with paralle
 pssh -i -H username@mars -H username@venus -H username@earth 'nodetool status'
 

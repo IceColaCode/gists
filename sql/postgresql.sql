@@ -28,6 +28,8 @@ alter table users alter column email drop not null;
 -- update one table according to another table with join
 update categories set collections = tt.collections, should_crawl=tt.should_crawl from tt where tt.uid = categories.uid;
 
+update products set is_valid=true where is_valid=false and updated_at>'2021-08-02';
+
 -- create table
 create table tt(uid text, should_crawl integer, collections text[]);
 

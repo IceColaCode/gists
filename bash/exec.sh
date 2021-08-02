@@ -9,6 +9,7 @@
 echo $$
 
 # if you run following cmd in ssh shell, it replaces the session and you are logged out
+# exec执行命令会登出
 exec ls -l /proc/self
 
 # eval will run the arguments as a command in the current shell. In other words eval foo bar is the same as just foo bar. But variables will be expanded before executing

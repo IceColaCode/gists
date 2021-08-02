@@ -5,6 +5,7 @@ sudo grep -q -F 'LimitMEMLOCK=infinity' /usr/lib/systemd/system/elasticsearch.se
 
 # sudo echo issue fix
 # -a means append
+# tee指令会从标准输入设备读取数据，将其内容输出到标准输出设备，同时保存成文件。
 echo "export JAVA_HOME=/etc/alternatives/java_sdk" |sudo tee -a ~/.bashrc
 
 export HBASE_HOME=/opt/hbase/current
@@ -44,6 +45,7 @@ rsync -avxHAX --progress / /new-disk/
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # check long gc in cassandra
+# zgrep 可以过滤压缩文件
 zgrep 'GC in [0-9][0-9][0-9][0-9]' /var/log/cassandra/system.log.*.zip | awk '{print $4}' | sort | uniq -c | awk '{print $2" "$1}' | tail
 
 # sed replace

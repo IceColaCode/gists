@@ -30,8 +30,74 @@ curl -XPUT "http://alpha:9200/_template/ip-ua-matching" -H 'Content-Type: applic
 # list all pipelines
 GET _ingest/pipeline
 
+GET hy-events-daily-pbs-2019-11-27-bid/_search
+{
+	"query":{
+		"bool":{
+		  "must":[{
+				"match":{
+					"deal_id":"6471630"
+				}
+			},{
+				"match":{
+					"dmp_target":"1"
+				}
+			}
+			],
+			"must_not":[{
+				"match":{
+					"ad_id":"24168"
+				}
+			},{
+				"match":{
+					"ad_id":"24167"
+				}
+			}
+			],
+			"filter":{
+				"range":{
+	"occured_at":{"gte":"2019-11-27T17:00:00+08:00","lt": "2019-11-27T18:00:00+08:00"}
+				}
+			}
+		}
+	}
+	, "size": 500
+}
 
 
+
+# 指定index的类型和副本等
+PUT _template/hy-datasay-tmpl
+{
+  "index_patterns": "hy-datasay*",
+  "settings": {
+    "number_of_replicas": 2,
+    "number_of_shards": 5
+  },
+  "mappings": {
+    "_doc": {
+      "_source": {
+        "enabled": true
+      },
+      "properties": {
+        "occured_at": {"type": "date"},
+        "start_time": {"type": "date"},
+        "end_time": {"type": "date"},
+        "mac":{"type":"keyword"},
+        "probe_id":{"type":"keyword"},
+        "floor":{"type":"keyword"},
+        "space_id":{"type":"keyword"},
+        "space_type":{"type":"keyword"},
+        "connecting_ssid":{"type":"keyword"},
+        "building_id":{"type":"keyword"},
+        "building_type":{"type":"keyword"},
+        "floor_type":{"type":"keyword"},
+        "rssi":{"type":"integer"},
+        "stay_seconds":{"type":"integer"}
+      }
+    }
+  }
+}
 
 
 
@@ -63,4 +129,14 @@ PUT ip-ua-matching-wexin/_doc/d5387258af8f84406a1ff044877dd476?pipeline=hy-event
 }
 
 
-
+# 修改index名
+POST _reindex
+{
+    "source": {
+    "index": "hy-datasay-probe1motion-2020-07-01"
+    },
+    "dest": {
+    "index": "hy-datasay-probe1-motion-2020-07-01",
+    "op_type": "create"
+    }
+}
