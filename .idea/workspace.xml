@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03edf70f-07df-4e4d-ac2f-72aaaec918c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/environment/environment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler/chrome_console" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler/xpath.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,15 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/software_install/the_silver_searcher.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/cassandra_cmds.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/hive.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
+            <state relative-caret-position="4152">
               <caret line="173" column="14" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
             </state>
           </provider>
@@ -66,13 +58,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql/postgresql.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+            <state relative-caret-position="700">
+              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/chrome_console">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crawler/xpath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tmux/command.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -87,6 +97,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -118,10 +135,12 @@
         <option value="$PROJECT_DIR$/software_install/install_pg.sh" />
         <option value="$PROJECT_DIR$/sql/postgresql.sql" />
         <option value="$PROJECT_DIR$/environment/environment" />
+        <option value="$PROJECT_DIR$/crawler/chrome_console" />
+        <option value="$PROJECT_DIR$/crawler/xpath.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -143,7 +162,7 @@
             <path>
               <item name="gists" type="b2602c69:ProjectViewProjectNode" />
               <item name="gists" type="462c0819:PsiDirectoryNode" />
-              <item name="environment" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gists" type="b2602c69:ProjectViewProjectNode" />
@@ -159,7 +178,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop_crawler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,7 +206,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -200,7 +220,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.47772828" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6414254" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -209,20 +229,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/os_operations/mount_disk.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/os_operations/prepare_host.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-425546319/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -415,6 +421,13 @@
     <entry file="file://$PROJECT_DIR$/software_install/pip.conf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/environment/environment">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/software_install/the_silver_searcher.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -436,6 +449,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sql/hive.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4152">
+          <caret line="173" column="14" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sql/hive3.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -446,34 +466,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/postgresql.sql">
+    <entry file="file://$PROJECT_DIR$/tmux/command.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+        <state relative-caret-position="240">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/environment/environment">
+    <entry file="file://$PROJECT_DIR$/sql/postgresql.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="700">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/hive.sql">
+    <entry file="file://$PROJECT_DIR$/crawler/chrome_console">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="173" column="14" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
+        <state relative-caret-position="72">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmux/command.sh">
+    <entry file="file://$PROJECT_DIR$/crawler/xpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="48">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
     </entry>
