@@ -1,0 +1,10 @@
+针对浏览器中出现的class中有空格的情况
+如 https://www.baidu.com/ 中 class="s-top-left s-isindex-wrap"
+在selenium中用class_name和xpath的方式不同：
+
+a = driver.find_element_by_class_name('s-top-left.s-isindex-wrap')
+a = driver.find_element_by_xpath('//*[@class="s-top-left s-isindex-wrap"]')
+
+
+driver.find_element_by_xpath('//script[contains(text(),"window.runParams")]')
+driver.find_element_by_xpath('//script[start_with(text(),"window.runParams")]')

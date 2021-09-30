@@ -10,13 +10,18 @@ copy rule_lifts from '/data/40_rule_lift.csv' delimiter ',' CSV header;
 
 ---export from multiple tables
 copy (select a.encode_number, r.risk, r.result from rule_results as r, applications as a where a.tid=247 and r.application_id = a.id) to '/mnt/a.csv' with csv DELIMITER '|';
+-- add column
+ALTER TABLE TABLE_NAME ADD COLUMN COLUMN_NAME type;
+-- drop column
+ALTER TABLE TABLE_NAME DROP COLUMN COLUMN_NAME;
+-- insert values
+INSERT INTO TABLE_NAME (column1, column2, column3,...columnN) VALUES (value1, value2, value3,...valueN);
 
 -- insert from other table
 insert into partial (id, part_pid)  select tmp_people.id, substring(tmp_people.pid from 7) from tmp_people;
 
 -- update from other table
 insert into partial (id, part_pid)  select tmp_people.id, substring(tmp_people.pid from 7) from tmp_people where tmp_people.pid = '2342vssdf2342';
-
 
 -------------------------
 --- alter table commands
@@ -30,6 +35,7 @@ update categories set collections = tt.collections, should_crawl=tt.should_crawl
 
 update products set is_valid=true where is_valid=false and updated_at>'2021-08-02';
 
+update sku set property_display_names=ARRAY['Group A','NO.1'] where uid='12000020852670834';
 -- create table
 create table tt(uid text, should_crawl integer, collections text[]);
 
@@ -71,3 +77,10 @@ DELETE FROM hot_searches a USING (
    ) b
    WHERE a.hot_on = b.hot_on and a.keyword = b.keyword
    AND a.ctid <> b.ctid
+
+-- json and jsonb
+# json是对输入的完整拷贝，使用时再去解析，所以它会保留输入的空格，重复键以及顺序等。而jsonb是解析输入后保存的二进制，它在解析时会删除不必要的空格和重复的键，顺序和输入可能也不相同。使用时不用再次解析。
+-- update jsonb 数组 （类型还是jsonb）
+update orders set platform_items = '[ {"product_uid": "4000353192155", "sku_id": "123"} , {"product_uid": "4000353192155", "sku_id": "456"} ]' where id = 9;
+
+
