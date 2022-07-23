@@ -15,3 +15,7 @@ tmux switch -t session-name
 Ctrl+b %
 #划分上下两个窗格。
 Ctrl+b "
+#移动到前一个窗格
+Ctrl+b p
+#移动到后一个窗格
+Ctrl+b ;

@@ -1,0 +1,13 @@
+- command+p 显示方法的参数信息
+- command+w 关闭当前选项卡  
+- control+shift+r 运行
+- command+1 打开（关闭）Project栏
+- command+4 打开（关闭）pycharm下面的Run
+- option+F12 打开（关闭）terminal
+- option+space 预览方法，类的定义
+- command+F12 弹出当前文件结构层（可以搜索当前类中的方法）
+- command+option+方向←（→） 回退，前进到上一个操作的地方
+- command +（-）  展开/折叠代码块
+- shift+F6  批量修改名称
+- command+b  跳转到实现
+- control+option+r 选择py文件run

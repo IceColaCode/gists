@@ -1,0 +1,147 @@
+let mapleader=' '
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmode
+set number
+" set relativenumber
+set scrolloff=3
+set history=100000
+set clipboard=unnamed
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set exchange
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+map <leader>es <Plug>(easymotion-s)
+map <leader>ef <Plug>(easymotion-f)
+
+
+" Ctrl+某个按键
+" 失效，暂时注释掉
+"inoremap <C-h> <Left>
+"inoremap <C-j> <Down>
+"inoremap <C-k> <Up>
+"inoremap <C-l> <Right>
+"inoremap <C-a> <Home>
+"inoremap <C-e> <End>
+"inoremap <C-d> <Delete>
+
+" 快速进入vim模式
+"inoremap jj <Esc>
+
+" Redo
+"nnoremap U <C-r>
+
+" 以下是自定义快捷键-----------------
+" 复制单个单词并标记a键 ==>空格+y
+nnoremap <Leader>y ma"+yiw"ayiw
+
+" 删除单个字符串并黏贴寄存器内容并标记s键 ==>空格+v
+nnoremap <Leader>v msviw"ap
+
+
+" Window operation
+" (关于窗口操作)
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
+
+" ==================================================
+" Show all the provided actions via `:actionlist`
+" jetbrains IDE 映射
+" ==================================================
+nnoremap <Leader>h gT
+nnoremap <Leader>l gt
+" idea内置快捷键control+E
+"nnoremap <Leader>rf :action RecentFiles<CR>
+" project search
+"相当于IDEA的两次shift按钮
+"nnoremap <Leader>se :action SearchEverywhere<CR>
+"查找用法
+nnoremap <Leader>fu :action FindUsages<CR>
+
+"打断点
+nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>
+
+
+"DUG启动
+"nnoremap <Leader>cd :action ChooseDebugConfiguration<CR>
+"跳转到Action
+"nnoremap <Leader>ga :action GotoAction<CR>
+
+"跳转到实体类
+nnoremap <Leader>gc :action GotoClass<CR>
+"跳转到声明
+nnoremap <Leader>gd :action GotoDeclaration<CR>
+
+"跳转到文件
+nnoremap <Leader>gf :action GotoFile<CR>
+
+
+"跳转到测试类(没有则自动建立)
+nnoremap <Leader>gt :action GotoTest<CR>
+"显示当前文件路径
+nnoremap <Leader>fp :action ShowFilePath<CR>
+
+"**maven窗口
+nnoremap <Leader>mv :action ActivateMavenProjectsToolWindow<CR>
+
+
+"修改当前文件的文件名
+nnoremap <Leader>rf :action RenameFile<CR>
+"显示用法
+nnoremap <Leader>su :action ShowUsages<CR>
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"查看所有断点
+"nnoremap <Leader>br :action ViewBreakpoints<CR>
+"跳转到实现类  command+b
+"nnoremap <Leader>gi :action GotoImplementation<CR>
+"修改所有的关联名字 shift+F6
+"nnoremap <Leader>re :action RenameElement<CR>
+
+"正常启动工程  control+option+r
+"nnoremap <Leader>rc :action ChooseRunConfiguration<CR>
+
+"关闭活动显示板
+"nnoremap <Leader>tc :action CloseActiveTab<CR>
+"以下是不常用
+
+"打开命令管理器
+"nnoremap <Leader>tl Vy<CR>:action ActivateTerminalToolWindow<CR>
+"vnoremap <Leader>tl y<CR>:action ActivateTerminalToolWindow<CR>
+" built in search looks better
+" (查找字符串) command+f
+"nnoremap / :action Find<CR>
+" but preserve ideavim search
+" (vim自带的搜索)
+"nnoremap <Leader>/ /
+"添加注释
+"nnoremap <Leader>;; :action CommentByLineComment<CR>
+
+"改变视图
+"nnoremap <Leader>cv :action ChangeView<CR>
+"跳转到标致
+"nnoremap <Leader>gs :action GotoSymbol<CR>
+
+
+"nnoremap <Leader>ic :action InspectCode<CR>
+"nnoremap <Leader>oi :action OptimizeImports<CR>
+"nnoremap <Leader>pm :action ShowPopupMenu<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
