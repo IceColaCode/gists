@@ -50,6 +50,9 @@ nnoremap <Leader>y ma"+yiw"ayiw
 " 删除单个字符串并黏贴寄存器内容并标记s键 ==>空格+v
 nnoremap <Leader>v msviw"ap
 
+" tab 操作
+nnoremap J gT
+nnoremap K gt
 
 " Window operation
 " (关于窗口操作)

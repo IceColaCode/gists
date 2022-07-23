@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="03edf70f-07df-4e4d-ac2f-72aaaec918c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment/environment" beforeDir="false" afterPath="$PROJECT_DIR$/environment/environment" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmux/command.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tmux/command.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vim/shortcut.md" beforeDir="false" afterPath="$PROJECT_DIR$/vim/shortcut.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vim/.ideavimrc" beforeDir="false" afterPath="$PROJECT_DIR$/vim/.ideavimrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vim/.vimrc" beforeDir="false" afterPath="$PROJECT_DIR$/vim/.vimrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,11 +118,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />

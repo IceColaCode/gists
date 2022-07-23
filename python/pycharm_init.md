@@ -1,0 +1,3 @@
+## Plugin
+- ideavim
+- ideavim-easymotion

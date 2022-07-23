@@ -11,6 +11,8 @@ nnoremap <space> za
 let mapleader=' '
 nnoremap <leader>n :bnext<cr>
 nnoremap <leader>p :bprevious<cr>
+nnoremap J gT
+nnoremap K gt
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
