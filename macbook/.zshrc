@@ -102,5 +102,19 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias python="python3"
-alias pip="pip3"
+alias python="python3.9"
+alias pip="pip3.9"
+
+# Mac下pip安装包之后无法在命令行使用解决方法
+export PATH="/Users/luoyan/Library/Python/3.8/bin:$PATH"
+
+# python虚拟环境配置
+export WORKON_HOME='/Users/luoyan/Documents/python_envs'
+export VIRTUALENVWRAPPER_PYTHON='/usr/local/bin/python3'
+source /Users/luoyan/Library/Python/3.8/bin/virtualenvwrapper.sh
+
+# brew 源修改
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+
